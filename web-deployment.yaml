@@ -17,3 +17,6 @@ spec:
       containers:
         - name: synergychat-web
           image: bootdotdev/synergychat-web:latest
+          envFrom:
+            - configMapRef:
+                name: synergychat-web-configmap
